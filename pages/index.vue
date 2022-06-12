@@ -15,19 +15,19 @@
 
 <script setup lang="ts">
   useHead({
-    "title": 'Nuxt3 + SCSS : LP Starter template.',
+    "title": 'Nuxt3 + SCSS : LP Starter.',
     meta: [
       { "twitter:card":  "summary_large_image" },
-      { "twitter:title":  "Nuxt3 + SCSS : LP Starter template." },
-      { "twitter:description":  "This page is 'Nuxt3 + SCSS : LP Starter template'." },
+      { "twitter:title":  "Nuxt3 + SCSS : LP Starter." },
+      { "twitter:description":  "This page is 'Nuxt3 + SCSS : LP Starter'." },
       { "twitter:image":  "/assets/images/ogp_image_index.png" },
       { "twitter:site": "@old_pgmrs_will" },
-      { "og:title": "Nuxt3 + SCSS : LP Starter template."} ,
-      { "og:description": "This page is 'Nuxt3 + SCSS : LP Starter template'."} ,
+      { "og:title": "Nuxt3 + SCSS : LP Starter."} ,
+      { "og:description": "This page is 'Nuxt3 + SCSS : LP Starter'."} ,
       { "og:url": ""} ,
-      { "og:image": "/assets/images/ogp_image_index.png"} ,
+      { "og:image": "/assets/images/ogp_image_index.png"},
       { "og:type": ""} ,
-      { "og:site_name": "Nuxt3 + SCSS : LP Starter template."} ,
+      { "og:site_name": "Nuxt3 + SCSS : LP Starter."} ,
     ]
   })
 </script>
