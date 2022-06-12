@@ -22,6 +22,8 @@ https://nuxt3-scss-ts-lp-starter.netlify.app/
 ## セットアップ
 
 ```
+git clone https://github.com/old-pgmrs-will/nuxt3_scss_simple_landingpage
+cd nuxt3_scss_simple_landingpage
 yarn install
 yarn dev -o
 ```
