@@ -2,7 +2,7 @@
   <section class="hero_section">
     <div class="hero" id="top">
       <div class="hero_title">
-        <h1 class="hero_title_text">Nuxt3 + SCSS : LP Starter</h1>
+        <h1 class="hero_title_text">Nuxt3 + SCSS : LP Starter template.</h1>
       </div>
       <div class="hero_main">
         <div class="hero_main_description">
