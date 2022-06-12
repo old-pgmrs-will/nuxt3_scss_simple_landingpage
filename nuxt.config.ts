@@ -17,11 +17,7 @@ export default defineNuxtConfig({
     // "@/assets/scss/reseter.min.css",
     // app全体で共通のcss参照
     "@/assets/scss/global.scss"
-    // "~/assets/scss/global.scss"
   ],
-  // vite: {
-  //   base: '/_nuxt/'
-  // },
   // Nuxt app 全体設定
   // https://v3.nuxtjs.org/api/configuration/nuxt.config#app
   app: {
