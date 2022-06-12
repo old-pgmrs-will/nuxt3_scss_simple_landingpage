@@ -17,17 +17,19 @@
   useHead({
     "title": 'Nuxt3 + SCSS : LP Starter.',
     meta: [
-      { "twitter:card":  "summary_large_image" },
-      { "twitter:title":  "Nuxt3 + SCSS : LP Starter." },
-      { "twitter:description":  "This page is 'Nuxt3 + SCSS : LP Starter'." },
-      { "twitter:image":  "https://nuxt3-scss-ts-lp-starter.netlify.app/ogp_image_index.png" },
-      { "twitter:site": "@old_pgmrs_will" },
-      { "og:title": "Nuxt3 + SCSS : LP Starter."} ,
-      { "og:description": "This page is 'Nuxt3 + SCSS : LP Starter'."} ,
-      { "og:url": ""} ,
-      { "og:image": "https://nuxt3-scss-ts-lp-starter.netlify.app/ogp_image_index.png"},
-      { "og:type": ""} ,
-      { "og:site_name": "Nuxt3 + SCSS : LP Starter."} ,
+      // twitter card
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Nuxt3 + SCSS : LP Starter." },
+      { name: "twitter:description", content: "This page is 'Nuxt3 + SCSS : LP Starter'." },
+      { name: "twitter:image", content: "https://nuxt3-scss-ts-lp-starter.netlify.app/ogp_image_index.png" },
+      { name: "twitter:site", content: "@old_pgmrs_will" },
+      // OGP setting (主にfacebook等)
+      { name: "og:title", content: "Nuxt3 + SCSS : LP Starter."} ,
+      { name: "og:description", content: "This page is 'Nuxt3 + SCSS : LP Starter'."} ,
+      { name: "og:url", content: "https://nuxt3-scss-ts-lp-starter.netlify.app"} ,
+      { name: "og:image", content: "https://nuxt3-scss-ts-lp-starter.netlify.app/ogp_image_index.png"},
+      { name: "og:type", content: "article"} ,
+      { name: "og:site_name", content: "Nuxt3 + SCSS : LP Starter."} ,
     ]
   })
 </script>
