@@ -1,42 +1,45 @@
-# Nuxt 3 Minimal Starter
+# Nuxt3 + SCSS : LP Starter kit.
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+## これはなに
 
-## Setup
+Nuxt3 (Vue3) RC + SCSS + TypeScriptを使い、webエンジニア・ポートフォリオ風のシンプルなランディングページを実装するためのスターター・テンプレート。
 
-Make sure to install the dependencies:
+## 特徴
 
-```bash
-# yarn
+- Nuxt3 (Vue3) ベースだが特徴的な機能は極力少なくし、jQueryからのステップアップ時に概ね理解しやすい構成
+- シングルページかつレスポンシブ
+- 一般的なヘッダ・コンテンツ・フッタとモバイル表示ではハンバーガーメニュー
+- ハンバーガーメニュー表示時はbodyはスクロールロック
+- メニューのリンクから各sectionへはスムーズ・スクロール
+- ページ内のsectionごとにコンポーネント化
+- ヘッダ/フッタ/メニュー/ボタン類もコンポーネント化
+
+## デモ
+TODO:
+
+## セットアップ
+
+```
 yarn install
+yarn dev -o
+```
 
-# npm
+または
+
+```
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
 npm run dev
+
+# http://localhost:3000/
+# にアクセス
 ```
 
-## Production
+## ライセンス
+MIT License
 
-Build the application for production:
+## リソース
+- SKILL sectionで使用しているアイコン  
+https://fontawesome.com/
 
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+- プレースホルダー画像  
+https://placeimg.com/
