@@ -1,4 +1,4 @@
-# Nuxt3 + SCSS : LP Starter kit.
+# Nuxt3 + SCSS : LP Starter template.
 
 ## これはなに
 
