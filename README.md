@@ -15,7 +15,7 @@ Nuxt3 (Vue3) RC + SCSS + TypeScriptを使い、webエンジニア・ポートフ
 - ヘッダ/フッタ/メニュー/ボタン類もコンポーネント化
 
 ## デモ
-TODO:
+https://nuxt3-scss-ts-lp-starter.netlify.app/
 
 ## セットアップ
 
