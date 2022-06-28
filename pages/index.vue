@@ -21,6 +21,7 @@
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Nuxt3 + SCSS : LP Starter." },
       { name: "twitter:description", content: "This page is 'Nuxt3 + SCSS : LP Starter'." },
+      // "ogp_image_index.png" は、public/ フォルダ内を参照
       { name: "twitter:image", content: "https://nuxt3-scss-ts-lp-starter.netlify.app/ogp_image_index.png" },
       { name: "twitter:site", content: "@old_pgmrs_will" },
       // OGP setting (主にfacebook等)
