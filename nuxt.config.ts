@@ -38,12 +38,7 @@ export default defineNuxtConfig({
         // ユーティリティ
         { name: "referrer", content: "unsafe-url" },
         { name: "robots", content: "index, follow" },
-        { name: "format-detection", content: "telephone=no" },
-        // 高速化対応（必要に応じて）
-        { name: "preconnect", href: "https://fonts.googleapis.com" },
-        { name: "dns-prefetch", href: "https://fonts.googleapis.com" },
-        { name: "preconnect", href: "https://fonts.gstatic.com" },
-        { name: "dns-prefetch", href: "https://fonts.gstatic.com" }
+        { name: "format-detection", content: "telephone=no" }
       ],
       script: [
         // 外部JS-libの読み込み（必要に応じて）
@@ -51,6 +46,11 @@ export default defineNuxtConfig({
         // { src: "https://awesome-lib-from-cdn.js" }
       ],
       link: [
+        // 高速化対応（先読み系・必要に応じて）
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: "dns-prefetch", href: "https://fonts.googleapis.com" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com" },
+        { rel: "dns-prefetch", href: "https://fonts.gstatic.com" },
         // 外部css読み込み
         { rel: "preload", as: "style", href: "https://cdn.jsdelivr.net/npm/reseter.css" },
         { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/reseter.css" },
