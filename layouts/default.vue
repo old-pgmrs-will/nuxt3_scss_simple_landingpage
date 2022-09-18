@@ -21,12 +21,10 @@
 <style lang="scss">
 // ページ共通
 .page{
-  display: flex;
-  flex-flow: column;
-  min-width: 320px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
   min-height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
 }
 // ページロード時のtransition
 // Nuxtには元々、ページtransition機能があるが、今回は未使用

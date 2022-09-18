@@ -5,10 +5,10 @@
       <p class="contact_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       <form class="contact_form">
         <div class="contact_form_fields">
-          <input class="contact_form_field contact_form_field-email" type="email" placeholder="Enter name">
-          <input class="contact_form_field contact_form_field-name" type="email" placeholder="Enter email">
+          <input class="contact_form_field contact_form_field-email" type="email" placeholder="Enter name"/>
+          <input class="contact_form_field contact_form_field-name" type="email" placeholder="Enter email"/>
         </div>
-        <UiButton class="contact_form_button_send md:center" caption="Send"></UiButton>
+        <UiButton class="contact_form_button_send md:center mt-8" caption="Send"></UiButton>
       </form>
     </div>
   </section>
@@ -23,8 +23,6 @@
   margin-left: auto;
   margin-right: auto;
   .contact_title{
-    //margin-top: 2rem;
-    //margin-bottom: 2rem;
     font-size: v.$text-3xl;
   }
   .contact_text{
@@ -43,9 +41,6 @@
         border-radius: 0.5rem;
         border: 1px solid var(--color-mono-2);
       }
-    }
-    .contact_form_button_send{
-      margin-top: 2rem;
     }
   }
 }

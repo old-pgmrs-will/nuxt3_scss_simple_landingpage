@@ -17,9 +17,9 @@
           <a href="#contact" class="footer_nav_link" data-scroll_footer_nav>CONTACT</a>
         </nav>
         <nav class="footer_socialmedia">
-          <a href="https://github.com/old-pgmrs-will" class="footer_socialmedia_link" target="_blank"><i class="footer_icon fa-brands fa-github"></i></a>
-          <a href="https://codepen.io/old_pgmrs_will" class="footer_socialmedia_link" target="_blank"><i class="footer_icon fa-brands fa-codepen"></i></a>
-          <a href="https://twitter.com/old_pgmrs_will" class="footer_socialmedia_link" target="_blank"><i class="footer_icon fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/old-pgmrs-will" class="footer_socialmedia_link" target="_blank" rel="noopener noreferrer"><i class="footer_icon fa-brands fa-github"></i></a>
+          <a href="https://codepen.io/old_pgmrs_will" class="footer_socialmedia_link" target="_blank" rel="noopener noreferrer"><i class="footer_icon fa-brands fa-codepen"></i></a>
+          <a href="https://twitter.com/old_pgmrs_will" class="footer_socialmedia_link" target="_blank" rel="noopener noreferrer"><i class="footer_icon fa-brands fa-twitter"></i></a>
         </nav>
       </div>
     </div>

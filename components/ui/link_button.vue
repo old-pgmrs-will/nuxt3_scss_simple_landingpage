@@ -26,7 +26,7 @@
   width: 14rem;
   margin-left: auto;
   margin-right: auto;
-  &.md\:center{
+  &.md-center{
     @include m.screen_for(medium){
       margin-left: 0;
     }

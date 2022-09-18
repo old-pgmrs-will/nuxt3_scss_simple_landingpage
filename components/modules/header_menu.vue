@@ -1,7 +1,7 @@
 <template>
   <div class="header_nav" id="header_nav">
-    <!-- #nav_menu のclassは、変数 isOpenNavMenu === true 時のみ 'is_open' がセットされる-->
-    <nav class="nav" id="nav_menu" v-bind:class="{is_open : isOpenNavMenu}">
+    <!-- #nav_menu のclassは、変数 openNavMenuState === true 時のみ 'is_open' がセットされる-->
+    <nav class="nav" id="nav_menu" v-bind:class="{is_open : openNavMenuState}">
       <!-- モバイル用ハンバーガーメニュー -->
       <button class="hamburger_menu" id="js_hamburger_menu">
         <!-- ハンバーガーメニューアイコン -->
@@ -24,45 +24,54 @@
 @use "@/assets/scss/variables" as v;
 @use "@/assets/scss/mixins" as m;
 // ヘッダ内navメニュー
-.nav{
-  position: absolute;
-  width: 100%;
-  .nav_list{
-    top: v.$header-height;
-    .nav_items{
-      display: block;
-      position: fixed;
-      width: 0;
-      height: 100%;
-      right: 0px;
-      margin-top: 1rem;
-      transition: 0.3s;
-      z-index: 1;
-      visibility: hidden;
-      overflow-y: hidden;
-      background: v.$color-theme-3;
-      .nav_item{
-        @include m.flex(center, center);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        .nav_link{
-          font-size: 2rem;
-          color: v.$color-theme-0;
-          text-decoration: none;
+.header_nav{
+  @include m.flex(center, center);
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  @include m.screen_for(medium){
+    @include m.flex(flex-end, center);
+  }
+  .nav{
+    position: absolute;
+    width: 100%;
+    .nav_list{
+      top: v.$header-height;
+      .nav_items{
+        display: block;
+        position: fixed;
+        width: 0;
+        height: 100%;
+        right: 0px;
+        margin-top: 1rem;
+        transition: 0.3s;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        background: v.$color-theme-3;
+        .nav_item{
+          @include m.flex(center, center);
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          padding-left: 3rem;
+          padding-right: 3rem;
+          .nav_link{
+            font-size: 2rem;
+            color: v.$color-theme-0;
+            text-decoration: none;
+          }
         }
       }
     }
-  }
-  &.is_open{
-    .nav_list{
-      .nav_items{
-        width: 100%;
-        height: 100%;
-        transition: 0.3s;
-        visibility: visible;
-        overflow-y: auto;
+    &.is_open{
+      .nav_list{
+        .nav_items{
+          width: 100%;
+          height: 100%;
+          transition: 0.3s;
+          visibility: visible;
+          overflow-y: auto;
+        }
       }
     }
   }
@@ -159,23 +168,24 @@
 </style>
 
 <script setup lang="ts">
-  // ハンバーガーメニューopen時にbodyをスクロールロックする
-  import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+  // ハンバーガーメニューopen時にbodyをスクロールロックする準備
+  import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
   import sweetScroll from 'sweet-scroll'
 
   // ハンバーガーメニューのopen/close状態
-  let isOpenNavMenu = ref(false)
+  let openNavMenuState = ref(false)
 
+  // DOM要素が作成された直後に実行
   onMounted(() => {
     const body = document.querySelector<HTMLElement>('body')
     const mobileMenuButton = document.querySelector<HTMLElement>('#js_hamburger_menu')
 
-    // ハンバーガーメニューclick時に、メニューをopen/closeするためのフラグ操作
-    const handleNavMenu = () => {
+    // ハンバーガーメニューclick時に、メニューをopen/closeする
+    const handleOpenNavMenuState = () => {
       // トグル処理: trueならfalse、falseならtrueに
-      isOpenNavMenu.value = !isOpenNavMenu.value
+      openNavMenuState.value = !openNavMenuState.value
       // 背景をスクロールロックする
-      pageScrollLock(isOpenNavMenu.value)
+      pageScrollLock(openNavMenuState.value)
     }
 
     // Navメニューのクリック時のページ内スクロール
@@ -184,8 +194,8 @@
       duration: 500,
       before: () => {
         // ハンバーガーメニューオープン時はメニューを閉じる
-        (isOpenNavMenu.value === true) ? (() => {
-          handleNavMenu()
+        (openNavMenuState.value === true) ? (() => {
+          handleOpenNavMenuState()
         })() : (() => {
           return false
         })()
@@ -202,12 +212,15 @@
       }
     }
 
-    // ハンバーガーメニューの操作時
-    const clickMobileMenu = () => {
+    // ハンバーガーメニューのclick時
+    const clickMobileMenu = (() => {
       mobileMenuButton!.addEventListener('click', () => {
-        handleNavMenu()
+        handleOpenNavMenuState()
       })
-    }
-    clickMobileMenu()
+    })()
+  })
+
+  onUnmounted(() => {
+    clearAllBodyScrollLocks();
   })
 </script>

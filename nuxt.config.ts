@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         { rel: "dns-prefetch", href: "https://fonts.googleapis.com" },
         { rel: "preconnect", href: "https://fonts.gstatic.com" },
         { rel: "dns-prefetch", href: "https://fonts.gstatic.com" },
-        // 外部css読み込み
+        // 外部css読み込み（ref = preload, stylesheet はブラウザ要件次第）
         { rel: "preload", as: "style", href: "https://cdn.jsdelivr.net/npm/reseter.css" },
         { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/reseter.css" },
         { rel: "preload", as: "style", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" },

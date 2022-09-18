@@ -2,14 +2,15 @@
   <section class="hero_section">
     <div class="hero" id="top">
       <div class="hero_title">
-        <h1 class="hero_title_text">Nuxt3 + SCSS : LP Starter.</h1>
+        <h1 class="hero_title_text">Nuxt3 : LP Starter.</h1>
+        <p class="hero_title_text-sub">Nuxt3(Vue3) + TypeScript + SCSS</p>
       </div>
       <div class="hero_main">
         <div class="hero_main_description">
           <p class="hero_main_description_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <UiLinkButton linkUrl="#" class="hero_conversion_linkbutton large-button md:center" caption="About me"></UiLinkButton>
+          <UiLinkButton linkUrl="#" class="hero_conversion_linkbutton large-button md-center mt-12" caption="About me" has_icon="true" icon_class="fa-solid fa-angle-right"></UiLinkButton>
         </div>
         <div class="hero_main_image">
           <img class="hero_main_image_src" src="~/assets/images/placeimg_960_640_grayscale_tech-5.jpg" alt="top image">
@@ -26,6 +27,10 @@
   max-width: 80rem; // 1280px
   margin-left: auto;
   margin-right: auto;
+  .hero_title_text-sub{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
   .hero_main{
     display: grid;
     margin-top: 2rem;
@@ -58,9 +63,6 @@
       .hero_main_description_text{
         padding-top: 1rem;
         font-size: v.$text-2xl;
-      }
-      .hero_conversion_linkbutton{
-        margin-top: 3rem;
       }
     }
   }

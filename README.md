@@ -1,8 +1,8 @@
-# Nuxt3 + SCSS : LP Starter template.
+# Nuxt3 + TypeScript + SCSS : LP Starter template
 
 ## これはなに
 
-Nuxt3 (Vue3) RC + SCSS + TypeScriptを使い、webエンジニア・ポートフォリオ風のシンプルなランディングページを実装するためのスターター・テンプレート。
+Nuxt3 (Vue3) RC + TypeScript + SCSSを使い、webエンジニア・ポートフォリオ風のシンプルなランディングページを実装するためのスターター・テンプレート。
 <br>
 <img width="1280" alt="nuxt3-scss-ts-lp-starter" src="https://user-images.githubusercontent.com/102408514/173215151-535114d7-d60a-41fa-b497-90b8a134706d.png">
 

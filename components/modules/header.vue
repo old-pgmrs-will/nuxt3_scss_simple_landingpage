@@ -37,15 +37,6 @@ header{
         color: v.$color-theme-0;
       }
     }
-    .header_nav{
-      @include m.flex(center, center);
-      position: relative;
-      width: 4rem;
-      height: 4rem;
-      @include m.screen_for(medium){
-        @include m.flex(flex-end, center);
-      }
-    }
   }
 }
 </style>

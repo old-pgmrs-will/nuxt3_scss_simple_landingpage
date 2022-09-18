@@ -11,7 +11,7 @@
             <h4 class="work_item_title">title</h4>
             <p class="work_item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
-          <UiLinkButton linkUrl="#" class="work_browse small-button color-theme-5 md:center" caption="Browse My Work" has_icon="true" icon_class="fa-solid fa-angle-right"></UiLinkButton>
+          <UiLinkButton linkUrl="#" class="mt-8 small-button color-theme-5 md:center" caption="Browse My Work" has_icon="true" icon_class="fa-solid fa-angle-right"></UiLinkButton>
         </li>
         <li class="work_item_card">
           <img class="work_item_image" src="~/assets/images/placeimg_960_640_grayscale_tech-2.jpg" loading="lazy">
@@ -19,7 +19,7 @@
             <h4 class="work_item_title">title</h4>
             <p class="work_item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
-          <UiLinkButton linkUrl="#" class="work_browse small-button color-theme-5 md:center" caption="Browse My Work" has_icon="true" icon_class="fa-solid fa-angle-right"></UiLinkButton>
+          <UiLinkButton linkUrl="#" class="mt-8 small-button color-theme-5 md:center" caption="Browse My Work" has_icon="true" icon_class="fa-solid fa-angle-right"></UiLinkButton>
         </li>
         <li class="work_item_card">
           <img class="work_item_image" src="~/assets/images/placeimg_960_640_grayscale_tech-3.jpg" loading="lazy">
@@ -27,7 +27,7 @@
             <h4 class="work_item_title">title</h4>
             <p class="work_item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
-          <UiLinkButton linkUrl="#" class="work_browse small-button color-theme-5 md:center" caption="Browse My Work" has_icon="true" icon_class="fa-solid fa-angle-right"></UiLinkButton>
+          <UiLinkButton linkUrl="#" class="mt-8 small-button color-theme-5 md:center" caption="Browse My Work" has_icon="true" icon_class="fa-solid fa-angle-right"></UiLinkButton>
         </li>
       </ul>
     </div>
@@ -71,9 +71,6 @@
         font-size: v.$text-lg;
         line-height: 1.5rem;
       }
-    }
-    .work_browse{
-      margin-top: 2rem;
     }
   }
   @include m.screen_for(medium){
